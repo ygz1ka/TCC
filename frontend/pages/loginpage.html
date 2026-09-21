@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Secretaria Virtual SENAI | Login</title>
+
+    <link rel="stylesheet" href="/frontend/css/style-login.css">
+</head>
+
+<body>
+
+    <header class="topo-login">
+
+        <div class="marca-login">
+
+            <div class="icone-marca">
+                🏛️
+            </div>
+
+            <h1>
+                Secretaria Virtual SENAI
+            </h1>
+
+        </div>
+
+        <button id="tema" aria-label="Alterar tema">
+        <img id="icone-tema" src="imagens/moon.png" alt="Trocar tema">
+        </button>
+
+    </header>
+
+    <main class="pagina-login">
+
+        <section class="card-login">
+
+            <div class="icone-principal">
+               👨‍🏫
+            </div>
+
+            <div class="cabecalho-login">
+
+                <h2>Bem-vindo!</h2>
+
+                <p>
+                    Acesse sua conta de professor para continuar
+                </p>
+
+            </div>
+
+            <div class="linha-login"></div>
+
+            <form id="form-login">
+
+                <div class="grupo-campo">
+
+                    <label for="usuario">
+                        Usuário ou e-mail
+                    </label>
+
+                    <div class="campo-login">
+
+                        <span class="icone-campo">
+                            👤
+                        </span>
+
+                        <input
+                            type="text"
+                            id="usuario"
+                            name="usuario"
+                            placeholder="Digite seu usuário ou e-mail"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="grupo-campo">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <div class="campo-login">
+
+                        <span class="icone-campo">
+                            🔒
+                        </span>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="mostrar-senha"
+                            class="mostrar-senha"
+                            aria-label="Mostrar senha"
+                        >
+                            👁️
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="opcoes-login">
+
+                    <label class="lembrar-login">
+
+                        <input
+                            type="checkbox"
+                            id="lembrar"
+                        >
+
+                        <span>Lembrar-me</span>
+
+                    </label>
+
+                    <a href="#" class="esqueci-senha">
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+                <button type="submit" class="botao-entrar">
+                    Entrar
+                </button>
+
+                <div class="separador-login">
+
+                    <span></span>
+
+                    <p>ou acesse com</p>
+
+                    <span></span>
+
+                </div>
+
+                <button type="button" class="botao-google">
+
+                    <span class="google-g">
+                        G
+                    </span>
+
+                    Entrar com Google
+
+                </button>
+
+                <p class="cadastro-login">
+
+                    Não tem uma conta?
+
+                    <a href="cadastro.html">
+                        Cadastre-se
+                    </a>
+
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="/frontend/js/loginprof.js"></script>
+
+</body>
+
+</html>

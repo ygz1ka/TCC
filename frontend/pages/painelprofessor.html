@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel do Professor</title>
+
+     <link rel="stylesheet" href="/frontend/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Secretaria Virtual SENAI</h2>
+
+        <button id="sair">
+            Sair
+        </button>
+    </header>
+
+    <main>
+
+        <h1>Painel do Professor</h1>
+        <p>Gerenciamento acadêmico</p>
+
+        <div class="opcoes-admin">
+
+            <button onclick="window.location.href='gerenciar-alunos.html'">
+                👨‍🎓
+                <strong>Alunos</strong>
+                <span>Visualizar e gerenciar alunos</span>
+            </button>
+
+            <button onclick="window.location.href='gerenciar-notas.html'">
+                📝
+                <strong>Notas</strong>
+                <span>Lançar e alterar notas</span>
+            </button>
+
+            <button onclick="window.location.href='gerenciar-disciplinas.html'">
+                📚
+                <strong>Disciplinas</strong>
+                <span>Gerenciar disciplinas</span>
+            </button>
+
+            <button onclick="window.location.href='gerenciar-eventos.html'">
+                📅
+                <strong>Eventos</strong>
+                <span>Criar e editar eventos</span>
+            </button>
+
+            <button onclick="window.location.href='gerenciar-comunicados.html'">
+                📢
+                <strong>Comunicados</strong>
+                <span>Publicar comunicados</span>
+            </button>
+
+            <button onclick="window.location.href='gerenciar-usuarios.html'">
+                ⚙️
+                <strong>Usuários</strong>
+                <span>Gerenciar usuários do sistema</span>
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="/frontend/js/painelprofessor.js"></script>
+
+</body>
+</html>

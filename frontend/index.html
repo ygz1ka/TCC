@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Escolha de acesso</title>
+
+    <link rel="stylesheet" href="/frontend/css/styleEscolha.css">
+</head>
+
+<body>
+
+    <header class="topo-escolha">
+
+        <div class="logo-escolha">
+            Secretaria Virtual SENAI
+        </div>
+
+        <button id="tema">
+           <img id="icone-tema" src="../imagens/moon.png" alt="Trocar tema">
+        </button>
+
+    </header>
+
+    <main class="pagina-escolha">
+
+        <section class="card-escolha">
+
+            <div class="icone-principal">
+                🏛️
+            </div>
+
+            <h1>Escolha seu tipo de acesso</h1>
+
+            <p class="subtitulo-escolha">
+                Selecione uma opção para continuar.
+            </p>
+
+            <div class="opcoes-acesso">
+
+                <button
+                    class="opcao-acesso"
+                    data-tipo="aluno"
+                >
+
+                    <div class="icone-acesso">
+                        🎓
+                    </div>
+
+                    <div class="texto-acesso">
+
+                        <h2>Aluno</h2>
+
+                        <p>
+                            Acesse boletim, disciplinas, cursos e mensagens.
+                        </p>
+
+                    </div>
+
+                    <span class="seta-acesso">›</span>
+
+                </button>
+
+                <button
+                    class="opcao-acesso"
+                    data-tipo="professor"
+                >
+
+                    <div class="icone-acesso">
+                        👨‍🏫
+                    </div>
+
+                    <div class="texto-acesso">
+
+                        <h2>Professor</h2>
+
+                        <p>
+                            Acesse turmas, notas, alunos e comunicados.
+                        </p>
+
+                    </div>
+
+                    <span class="seta-acesso">›</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    
+      <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+
+    <script src="/frontend/js/escolha.js"></script>
+
+</body>
+
+</html>

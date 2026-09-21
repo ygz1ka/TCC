@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Configurações</title>
+
+    <link rel="stylesheet" href="/frontend/css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+         <div class="menu" id="ham-Menu">
+            ☰
+        </div>
+
+        <div class="logo">
+            Configurações
+        </div>
+        
+        <button id="tema">
+         <img id="icone-tema" src="/frontend/assets/imagens/moon.png" alt="Trocar tema">
+        </button>
+
+    </header>
+
+
+    <aside>
+
+        <h2>Menu</h2>
+
+        <ul>
+
+    <li><a href="index.html">🏠 Página Inicial</a></li>
+
+    <li><a href="contatos.html">📞 Contatos</a></li>
+
+    <li><a href="secretaria.html">🏫 Secretaria</a></li>
+
+    <li><a href="boletim.html">📖 Boletim</a></li>
+
+    <li><a href="eventos.html">📅 Eventos</a></li>
+
+    <li><a href="disciplinas.html">📚 Disciplinas</a></li>
+
+    <li><a href="mensagens.html">📨 Mensagens</a></li>
+
+    <li><a href="configuracoes.html">⚙ Configurações</a></li>
+
+    </ul>
+
+    </aside>
+
+    <main>
+
+        <div class="configuracoes-layout">
+
+    <nav class="menu-configuracoes">
+
+        <button class="item-configuracao ativo" data-secao="conta">
+            <span>♙</span>
+            Conta
+        </button>
+
+        <button class="item-configuracao" data-secao="seguranca">
+            <span>🔒</span>
+            Segurança
+        </button>
+
+        <button class="item-configuracao" data-secao="notificacoes">
+            <span>🔔</span>
+            Notificações
+        </button>
+
+        <button class="item-configuracao" data-secao="aparencia">
+            <span>🎨</span>
+            Aparência
+        </button>
+
+        <button class="item-configuracao" data-secao="idioma">
+            <span>🌐</span>
+            Idioma
+        </button>
+
+        <button class="item-configuracao" data-secao="ajuda">
+            <span>❔</span>
+            Ajuda
+        </button>
+
+        <div class="linha-menu-configuracoes"></div>
+
+        <button id="logout" class="btn-logout">
+            <span>↪</span>
+            Sair da conta
+        </button>
+
+    </nav>
+
+
+
+
+        <section class="config-card">
+
+            <div class="perfil-topo">
+
+                <div class="perfil-icone">
+                    👤
+                </div>
+
+                <div>
+
+                    <h2>Minha Conta</h2>
+
+                    <p>
+                        Gerencie suas informações pessoais.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="linha"></div>
+
+            <div class="campo">
+
+                <label for="nome">
+                    Nome completo
+                </label>
+
+                <input
+                    id="nome"
+                    type="text"
+                    value="João da Silva"
+                    readonly
+                >
+
+            </div>
+
+            <div class="campo">
+
+                <label for="curso">
+                    Curso
+                </label>
+
+                <input
+                    id="curso"
+                    type="text"
+                    value="Desenvolvimento de Sistemas"
+                    readonly
+                >
+
+            </div>
+
+            <div class="campo">
+
+                <label for="ra">
+                    RA
+                </label>
+
+                <input
+                    id="ra"
+                    type="text"
+                    value="20260012345"
+                    readonly
+                >
+
+            </div>
+
+            <div class="campo">
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    id="email"
+                    type="email"
+                    value="joao.silva@email.com"
+                >
+
+            </div>
+
+            <div class="campo">
+
+                <label for="telefone">
+                    Telefone
+                </label>
+
+                <input
+                    id="telefone"
+                    type="text"
+                    value="(11) 99999-9999"
+                    maxlength="15"
+                >
+
+            </div>
+
+            <div class="acoes-configuracoes">
+
+                <button id="salvar" class="btn-salvar">
+                    💾 Salvar alterações
+                </button>
+
+                <button id="logout" class="btn-logout">
+                    🚪 Sair da conta
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="/frontend/js/script.js"></script>
+
+</body>
+
+</html>
